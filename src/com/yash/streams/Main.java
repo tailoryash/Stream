@@ -25,7 +25,7 @@ public class Main {
         newData.forEach(System.out::println);
 
         System.out.println("----------Printing No of Employee in Java Dept----------");
-        long noOfJavaEmp = empList.stream().filter(element -> element.getEmpDept().toLowerCase().equals("Java")).count();
+        long noOfJavaEmp = empList.stream().filter(element -> element.getEmpDept().equals("Java")).count();
         System.out.println("No of Employee in Java : " + noOfJavaEmp);
 
         System.out.println("----------Printing Employee's details who have 'D' in their name ----------");
